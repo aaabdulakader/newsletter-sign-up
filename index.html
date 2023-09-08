@@ -23,100 +23,101 @@
     </title>
   </head>
   <body>
-    <section class="newletter-signup">
-      <!-- Sign-up form start -->
-      <div class="signupForm">
-        <h1 class="title">Stay updated!</h1>
-        <p class="description">
-          Join 60,000+ product managers receiving monthly updates on:
-        </p>
-        <ul class="services-list">
-          <li class="service">
-            <img
-              src="assets/images/icon-success.svg"
-              class="check-icon"
-              alt="check mark"
-            />Product discovery and building what matters
-          </li>
-          <li class="service">
-            <img
-              src="assets/images/icon-success.svg"
-              class="check-icon"
-              alt="check mark"
-            />Measuring to ensure updates are a success
-          </li>
-          <li class="service">
-            <img
-              src="assets/images/icon-success.svg"
-              class="check-icon"
-              alt="check mark"
-            />And much more!
-          </li>
-        </ul>
-        <form class="form">
-          <label for="email" class="label"
-            >Email address
-            <span class="error-text">Valid email required</span></label
-          >
-          <!-- error -->
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="email@company.com"
-            class="input"
-            required
+    <main>
+      <section class="newletter-signup">
+        <!-- Sign-up form start -->
+        <div class="signupForm">
+          <h1 class="title">Stay updated!</h1>
+          <p class="description">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <ul class="services-list">
+            <li class="service">
+              <img
+                src="assets/images/icon-success.svg"
+                class="check-icon"
+                alt="check mark"
+              />Product discovery and building what matters
+            </li>
+            <li class="service">
+              <img
+                src="assets/images/icon-success.svg"
+                class="check-icon"
+                alt="check mark"
+              />Measuring to ensure updates are a success
+            </li>
+            <li class="service">
+              <img
+                src="assets/images/icon-success.svg"
+                class="check-icon"
+                alt="check mark"
+              />And much more!
+            </li>
+          </ul>
+          <form class="form">
+            <label for="email" class="label"
+              >Email address
+              <span class="error-text">Valid email required</span></label
+            >
+            <!-- error -->
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@company.com"
+              class="input"
+              required
+            />
+            <button onsubmit="onsubmit" type="submit" class="submit-btn">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+        <!-- Sign-up form end -->
+
+        <!-- Illustration -->
+        <div class="illustration">
+          <img
+            src="assets/images/illustration-sign-up-desktop.svg"
+            alt="desktop illustration"
+            class="desktop"
           />
-          <button onsubmit="onsubmit" type="submit" class="submit-btn">
-            Subscribe to monthly newsletter
-          </button>
-        </form>
-      </div>
-      <!-- Sign-up form end -->
+          <img
+            src="assets/images/illustration-sign-up-mobile.svg"
+            alt="mobile illustration"
+            class="mobile"
+          />
+        </div>
+      </section>
 
-      <!-- Illustration -->
-      <div class="illustration">
-        <img
-          src="assets/images/illustration-sign-up-desktop.svg"
-          alt="desktop illustration"
-          class="desktop"
-        />
-        <img
-          src="assets/images/illustration-sign-up-mobile.svg"
-          alt="mobile illustration"
-          class="mobile"
-        />
-      </div>
-    </section>
+      <!-- Success State -->
 
-    <!-- Success State -->
+      <section class="success hide">
+        <div class="success-state">
+          <img
+            src="assets/images/icon-success.svg"
+            class="check-icon"
+            alt="check mark"
+          />
+          <h1 class="title">Thanks for subscribing!</h1>
+          <p class="description">
+            A confirmation email has been sent to
+            <span>ash@loremcompany.com</span>. Please open it and click the
+            button inside to confirm your subscription
+          </p>
+          <!-- Dismiss Message -->
+          <button class="dismiss-btn">Dismiss message</button>
+        </div>
+      </section>
 
-    <section class="success hide">
-      <div class="success-state">
-        <img
-          src="assets/images/icon-success.svg"
-          class="check-icon"
-          alt="check mark"
-        />
-        <h1 class="title">Thanks for subscribing!</h1>
-        <p class="description">
-          A confirmation email has been sent to
-          <span>ash@loremcompany.com</span>. Please open it and click the button
-          inside to confirm your subscription
-        </p>
-        <!-- Dismiss Message -->
-        <button class="dismiss-btn">Dismiss message</button>
-      </div>
-    </section>
+      <!-- Success message start -->
 
-    <!-- Success message start -->
-
-    <!-- Thanks for subscribing! A confirmation email has been sent to
+      <!-- Thanks for subscribing! A confirmation email has been sent to
     ash@loremcompany.com. Please open it and click the button inside to confirm
     your subscription. Dismiss message -->
 
-    <!-- Success message end -->
-
+      <!-- Success message end -->
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
